@@ -19,7 +19,7 @@ def reduce(arr, start = nil)
   else
    ## if not given a starting point
    start = 0;
-   total = start
+   total = start;
   end
   
     while i < arr.length
