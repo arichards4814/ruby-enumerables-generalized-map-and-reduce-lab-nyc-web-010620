@@ -16,10 +16,11 @@ def reduce(arr, start = nil)
   if start
   total = start  
   else
-    
+  yield(arr[i])  
   end
   
   while i < arr.length
+  
   total = yield(start, arr[i])
   
   i += 1 
