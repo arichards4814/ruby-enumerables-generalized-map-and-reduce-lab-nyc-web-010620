@@ -17,7 +17,7 @@ def reduce(arr, start = nil)
   total = start  
      while i < arr.length
   
-     start = yield(start, arr[i])
+     total = yield(total, arr[i])
   
      i += 1 
      end
