@@ -13,7 +13,7 @@ end
 def reduce(arr, start = nil)
   i = 0
   
-  if start
+  if start != nil
   total = start  
      while i < arr.length
   
