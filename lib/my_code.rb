@@ -14,19 +14,16 @@ def reduce(arr, start = nil)
   i = 0
   
   if start
-    
     ## if given a starting point 
-    while i < arr.length
-    total = yield(start, arr[i])
-    i += 1
-    end
-    total
-    
   else
    ## if not given a starting point
    start = 0;
-   total = yield(start, arr[i])
-   total
   end
+  
+    while i < arr.length
+        total = yield(start, arr[i])
+        i += 1
+    end
+    total
   
 end
