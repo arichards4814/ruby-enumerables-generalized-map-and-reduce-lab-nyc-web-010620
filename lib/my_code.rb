@@ -14,7 +14,7 @@ def reduce(arr, start = nil)
   i = 0
   
   if start != nil
-  total = start  
+    total = start  
      while i < arr.length
   
      total = yield(total, arr[i])
@@ -23,7 +23,8 @@ def reduce(arr, start = nil)
      end
      total
   else
-  yield(start, arr[i])  
+    total = yield(start, arr[i])  
+    total
   end
   
   
