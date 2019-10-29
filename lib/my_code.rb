@@ -18,7 +18,7 @@ def reduce(arr, start = nil)
     total = start
   else
    ## if not given a starting point
-   start = 0;
+   start = arr[0];
    total = start;
   end
   
