@@ -22,7 +22,7 @@ def reduce(arr, start = nil)
      i += 1 
      end
   else
-  yield(total, arr[i])  
+  yield(start, arr[i])  
   end
   
   
