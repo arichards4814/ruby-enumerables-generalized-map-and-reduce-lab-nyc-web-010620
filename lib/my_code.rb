@@ -24,8 +24,8 @@ def reduce(arr, start = nil)
     
   else
    ## if not given a starting point
-   
-   total = yield(arr[i])
+   start = 0;
+   total = yield(start, arr[i])
    total
   end
   
