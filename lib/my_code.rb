@@ -13,20 +13,20 @@ end
 def reduce(arr, start = nil)
   i = 0
   
-  if start != nil
-    total = start  
-     while i < arr.length
-  
-     total = yield(total, arr[i])
-  
-     i += 1 
-     end
-     total
-  else
-    total = yield(start, arr[i])  
+  if start
+    
+    ## if given a starting point 
+    while i < arr.length
+    total = yield(start, arr[i])
+    i += 1
+    end
     total
+    
+  else
+   ## if not given a starting point
+   
+   total = yield(arr[i])
+   total
   end
-  
-  
   
 end
